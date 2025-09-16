@@ -2,11 +2,18 @@
   "name": "@ucc/orchestrator",
   "version": "0.0.0",
   "type": "module",
-  "dependencies": {
-    "@ucc/shared": "workspace:*"
-  },
   "scripts": {
+    "dev": "tsx watch src/server.ts",
     "build": "tsc -p tsconfig.json",
+    "start": "node dist/server.js",
     "lint": "eslint ."
+  },
+  "dependencies": {
+    "fastify": "^4.28.1",
+    "pino": "^9.0.0"
+  },
+  "devDependencies": {
+    "tsx": "^4.16.0",
+    "dotenv": "^16.4.5"
   }
 }
