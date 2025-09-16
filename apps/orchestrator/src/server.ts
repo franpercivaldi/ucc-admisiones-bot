@@ -1,10 +1,16 @@
 import Fastify from "fastify";
 import { config } from "./config.js";
 import pkg from "../package.json" assert { type: "json" };
+import { pingRoutes } from "./http/routes/ping.js";
+import { registerErrorHandler } from "./http/error-handler.js";
+
 
 const app = Fastify({
   logger: { level: config.env === "development" ? "info" : "warn" }
 });
+
+registerErrorHandler(app);
+await app.register(pingRoutes);
 
 app.get("/healthz", async () => {
   return { status: "ok", version: pkg.version };
