@@ -1,0 +1,8 @@
+{
+  "name": "@ucc/orchestrator",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint ."
+  }
+}

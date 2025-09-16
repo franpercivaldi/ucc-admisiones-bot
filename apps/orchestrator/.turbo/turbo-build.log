@@ -1,0 +1,5 @@
+
+
+> @ucc/orchestrator@0.0.0 build /home/franpercivaldi/personalProyects/ucc-admisiones-bot/apps/orchestrator
+> tsc -p tsconfig.json
+
