@@ -1,5 +1,5 @@
 import Fastify from "fastify";
-import { config } from "./config.js";
+import { config } from "./config/index.js";
 import pkg from "../package.json" assert { type: "json" };
 import { pingRoutes } from "./http/routes/ping.js";
 import { registerErrorHandler } from "./http/error-handler.js";
