@@ -1,0 +1,21 @@
+name: Feature request
+description: Proponer una mejora/funcionalidad
+labels: ["enhancement"]
+body:
+  - type: textarea
+    id: problem
+    attributes: { label: Problema a resolver, placeholder: "Qué duele / por qué ahora" }
+    validations: { required: true }
+  - type: textarea
+    id: proposal
+    attributes: { label: Propuesta, placeholder: "Resumen de la solución" }
+    validations: { required: true }
+  - type: textarea
+    id: scope
+    attributes: { label: Alcance, placeholder: "In-scope / Out-of-scope" }
+  - type: textarea
+    id: acceptance
+    attributes: { label: Criterios de aceptación, placeholder: "- [ ] ..." }
+  - type: textarea
+    id: risks
+    attributes: { label: Riesgos/Dependencias }
